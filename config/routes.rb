@@ -1,4 +1,7 @@
 Njerichelimo::Application.routes.draw do
+  resources :articles
+
+
   authenticated :user do
     root :to => 'home#index'
   end
